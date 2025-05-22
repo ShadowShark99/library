@@ -52,6 +52,7 @@ function displayBooks(){
     bookCard.appendChild(deleteButton);
 
     let readButton = document.createElement("button");
+    readButton.classList.toggle("read");
     readButton.innerHTML = "toggle read";
     readButton.addEventListener("click", () => {
       book.read = !book.read;

@@ -30,6 +30,13 @@ body{
   position: relative;
 }
 
+.read{
+  position: absolute;
+  margin: auto;
+  bottom: 0px;
+
+}
+
 .delete{
   position: absolute;
   right: 0px;
