@@ -1,0 +1,58 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  grid-template-rows: 100px 1fr 50px 0px;
+}
+
+.header{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookshelf{
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.book{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  border: solid 1px #000;
+  position: relative;
+}
+
+.delete{
+  position: absolute;
+  right: 0px;
+}
+
+.new-book{
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.add-book{
+  position: relative;
+  display: grid;
+}
+
+dialog{
+  position: absolute;
+  top: 0;
+
+  margin: auto;
+}
+
+dialog > div{
+  display: grid;
+}
