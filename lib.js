@@ -1,15 +1,16 @@
 const myLibrary = [];
 const color = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "brown", "grey", "black"];
 
-function Book(title, author, pages, read) {
-  if(!new.target){
-    throw new Error("Constructor Book requires 'new'");
+class Book {
+  constructor(title, author, pages, read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.id = crypto.randomUUID();
   }
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.id = crypto.randomUUID();
+  
+  
 }
 
 function addBookToLibrary(title, author, pages, read) {
